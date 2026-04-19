@@ -11,8 +11,9 @@ export default defineConfig({
   plugins: [
     VitePWA({
       registerType: 'autoUpdate',
+      includeAssets: ['icon.png'],
       manifest: {
-        name: 'Home Stock App',
+        name: 'HomeStock',
         short_name: 'Stock',
         start_url: '/home-stock-app/',
         display: 'standalone',
@@ -20,14 +21,14 @@ export default defineConfig({
         theme_color: '#000000',
         icons: [
           {
-            src: 'icon.svg',
+            src: '/home-stock-app/icon.png',
             sizes: '192x192',
-            type: 'image/svg+xml',
+            type: 'image/png',
           },
           {
-            src: 'icon.svg',
+            src: '/home-stock-app/icon.png',
             sizes: '512x512',
-            type: 'image/svg+xml',
+            type: 'image/png',
           },
         ],
       },
