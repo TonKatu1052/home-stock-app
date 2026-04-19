@@ -5,6 +5,7 @@
     "format": "prettier --write ./src"
   },
   "devDependencies": {
+    "@bubblewrap/cli": "^1.24.1",
     "prettier": "^3.8.3",
     "typescript": "^6.0.3",
     "vite": "^7.3.2",
